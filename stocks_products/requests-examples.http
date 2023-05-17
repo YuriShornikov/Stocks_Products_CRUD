@@ -17,6 +17,7 @@ Content-Type: application/json
 GET {{baseUrl}}/products/
 Content-Type: application/json
 
+
 ###
 
 # обновление продукта
@@ -90,5 +91,6 @@ Content-Type: application/json
 
 ###
 
-GET {{baseUrl}}/stocks/?search=помид
+#поиск склада, по значению помидор
+GET {{baseUrl}}/stocks/?search=помидор
 Content-Type: application/json
