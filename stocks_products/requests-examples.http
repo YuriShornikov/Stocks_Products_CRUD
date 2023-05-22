@@ -90,5 +90,5 @@ Content-Type: application/json
 
 ###
 
-GET {{baseUrl}}/stocks/?search=помид
+GET {{baseUrl}}/stocks/?search=Помидор
 Content-Type: application/json
