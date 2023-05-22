@@ -17,6 +17,7 @@ Content-Type: application/json
 GET {{baseUrl}}/products/
 Content-Type: application/json
 
+
 ###
 
 # обновление продукта
@@ -90,5 +91,10 @@ Content-Type: application/json
 
 ###
 
+<<<<<<< HEAD
 GET {{baseUrl}}/stocks/?search=Помидор
+=======
+#поиск склада, по значению помидор
+GET {{baseUrl}}/stocks/?search=помидор
+>>>>>>> 8db15544313b98612c2c1f0df5c40754f17a6d95
 Content-Type: application/json
