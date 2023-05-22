@@ -19,15 +19,12 @@ class ProductViewSet(ModelViewSet):
 class StockViewSet(ModelViewSet):
     queryset = Stock.objects.all()
     serializer_class = StockSerializer
-<<<<<<< HEAD
-    filterset_fields = ['products', 'products__title']
-    # filter_backends = [SearchFilter]
-    # search_fields = ['products__title']
-=======
+    filter_backends = [DjangoFilterBackend, SearchFilter]
     filterset_fields = ['products']
-    filter_backends = [SearchFilter]
+    filter_class = 'StockProductTitleFilter'
+
     search_fields = ['products__title']
->>>>>>> 8db15544313b98612c2c1f0df5c40754f17a6d95
+
 
 class StockProductTitleFilter(filters.BaseFilterBackend):#ручной фильтр для поиска
     def filter_queryset(self, request, queryset):
